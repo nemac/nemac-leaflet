@@ -1,16 +1,30 @@
 {
   "name": "nemac-react-leaflet",
   "version": "1.0.0",
+  "description": "base project for all NEMAC react leaflet projects",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nemac/nemac-react-leaflet.git"
   },
+  "bugs": {
+    "url": "https://github.com/nemac/nemac-react-leaflet/issues"
+  },
+  "homepage": "https://github.com/nemac/nemac-react-leaflet#readme",
   "author": "NEMAC",
   "license": "MIT",
+  "keywords": [
+    "NEMAC"
+  ],
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.23.3",
@@ -24,10 +38,5 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-leaflet": "^4.2.1"
   }
 }
