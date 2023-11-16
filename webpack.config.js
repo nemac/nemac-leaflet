@@ -43,12 +43,6 @@ module.exports = {
       extensions: ['.js', '.jsx'],
     },
   */
-
-  resolve: {
-    fallback: {
-      buffer: require.resolve('buffer/')
-    }
-  },
   // Determine how the different types of modules will be treated.
   // https://webpack.js.org/configuration/module
   // https://webpack.js.org/concepts#loaders
@@ -104,9 +98,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: path.join('css/style.[name].css'),
       chunkFilename: '[name].css'
-    }),
-    new webpack.ProvidePlugin({
-      Buffer: ['buffer', 'Buffer']
     })
   ]
 };
